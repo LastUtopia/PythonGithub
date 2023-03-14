@@ -43,7 +43,6 @@ def oracle_close():
 mysql
 '''
 
-
 def connect_mysql(db):
     conn = pymysql.connect(host='localhost', user='root', password='1234', db='ICIA', charset='utf8')
     return conn
@@ -90,9 +89,3 @@ def get_matches_timelines(match_id):
     url2 = f'https://asia.api.riotgames.com/lol/match/v5/matches/{match_id}/timeline?api_key={riot_api_key}'
     res2 = requests.get(url2).json()
     return res1,res2
-
-print("test code1")
-
-print("test code2")
-
-print("test code3")
